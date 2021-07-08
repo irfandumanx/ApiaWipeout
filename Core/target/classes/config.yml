@@ -1,0 +1,202 @@
+type_normal: '&4Normal'
+type_piston: '&aPiston'
+
+selector_normal:
+  type: STICK
+  data: 0
+  name: '&bWipeout Selector &8(%type%&8)'
+  lore:
+    - '&7Left click for first location'
+    - '&7Right click for left location'
+  glow: true
+
+selector_piston:
+  type: STICK
+  data: 0
+  name: '&bWipeout Selector &8(&a%type%&8)'
+  lore:
+    - '&7Left click for set piston'
+    - '&7Right click for delete piston'
+  glow: true
+
+#How many due fall should the player be given?
+#Give value 0 for disable this feature.
+limited_fall_count: 3
+
+#If this setting is true, the player will be able to receive the "default" reward after finishing the wipeout.
+can_take_prize_again: true
+
+#Does the player get blind if enters the throw area?
+get_blind_when_jumping: true
+
+#How many minutes would the game take?
+wipeout_game_time: 20
+
+#How many seconds should the game start after typing the starttimer command?
+wipeout_command_start_time: 60
+
+wipeout_dates:
+  enabled: true
+  'apiateam':
+    day: 'EVERYDAY'
+    hour: 18
+    minute: 59
+    type: 'starttimer'
+
+wipeout_stop_time_notification:
+  - 1800
+  - 600
+  - 300
+  - 60
+  - 30
+  - 10
+  - 5
+  - 3
+  - 2
+  - 1
+
+wipeout_start_time_notification:
+  - 60
+  - 45
+  - 30
+  - 15
+  - 10
+  - 5
+  - 3
+  - 2
+  - 1
+
+commands:
+  reload:
+    - 'rl'
+    - 'rel'
+  showregion:
+    - 'show'
+  baselocation:
+    - 'location'
+  checkpoint:
+    - 'cp'
+  delete:
+    - 'remove'
+    - 'del'
+  help:
+    - 'hlp'
+  hologram:
+    - 'hl'
+    - 'holo'
+  selector:
+    - 'sel'
+  set:
+    - 'create'
+  start:
+    - 'go'
+  stop:
+    - 'cancel'
+  stoptimer:
+    - 'stoptmr'
+  starttimer:
+    - 'starttmr'
+
+prizes:
+  '1':
+    - 'title;&bWipeout Tamamlandı!;&7Ödül: &f300K, P4 Set'
+    - 'actionbar;&bWipeout tamamlandı!'
+    - 'broadcast;&8[&bWipeout&8] &a%player% &fwipeoutu &a%rank%. &folarak bitirdi.'
+    - 'message;&8[&bWipeout&8] &fTebrikler, wipeoutu &a%rank%. &folarak bitirdiniz.'
+    - 'command;eco give %player% 300000'
+    - 'command;give %player% diamond_helmet 1 name:&8❛_&3P4_Kask_&8❜ lore:&1|_&8▪_&7Bu_kask_wipeoutdan_1.lik_ile_kazanıldı. protect:4 unbreaking:3'
+    - 'command;give %player% diamond_chestplate 1 name:&8❛_&3P4_Zırh_&8❜ lore:&1|_&8▪_&7Bu_zırh_wipeoutdan_1.lik_ile_kazanıldı. protect:4 unbreaking:3'
+    - 'command;give %player% diamond_leggings 1 name:&8❛_&3P4_Pantolon_&8❜ lore:&1|_&8▪_&7Bu_pantolon_wipeoutdan_1.lik_ile_kazanıldı. protect:4 unbreaking:3'
+    - 'command;give %player% diamond_boots 1 name:&8❛_&3P4_Bot_&8❜ lore:&1|_&8▪_&7Bu_bot_wipeoutdan_1.lik_ile_kazanıldı. protect:4 unbreaking:3'
+  '2':
+    - 'title;&bWipeout Tamamlandı!;&7Ödül: &f300K'
+    - 'broadcast;&8[&bWipeout&8] &a%player% &fwipeoutu &a%rank%. &folarak bitirdi.'
+    - 'message;&8[&bWipeout&8] &fTebrikler, wipeoutu &a%rank%. &folarak bitirdiniz.'
+    - 'command;eco give %player% 300000'
+  '3':
+    - 'title;&bWipeout Tamamlandı!;&7Ödül: &f250K'
+    - 'broadcast;&8[&bWipeout&8] &a%player% &fwipeoutu &a%rank%. &folarak bitirdi.'
+    - 'message;&8[&bWipeout&8] &fTebrikler, wipeoutu &a%rank%. &folarak bitirdiniz.'
+    - 'command;eco give %player% 250000'
+  '4':
+    - 'title;&bWipeout Tamamlandı!;&7Ödül: &f200K'
+    - 'broadcast;&8[&bWipeout&8] &a%player% &fwipeoutu &a%rank%. &folarak bitirdi.'
+    - 'message;&8[&bWipeout&8] &fTebrikler, wipeoutu &a%rank%. &folarak bitirdiniz.'
+    - 'command;eco give %player% 200000'
+  '5':
+    - 'title;&bWipeout Tamamlandı!;&7Ödül: &f150K'
+    - 'broadcast;&8[&bWipeout&8] &a%player% &fwipeoutu &a%rank%. &folarak bitirdi.'
+    - 'message;&8[&bWipeout&8] &fTebrikler, wipeoutu &a%rank%. &folarak bitirdiniz.'
+    - 'command;eco give %player% 150000'
+  'default':
+    - 'title;&bWipeout Tamamlandı!;&7Ödül: &f50K'
+    - 'broadcast;&8[&bWipeout&8] &a%player% &fwipeoutu &a%rank%. &folarak bitirdi.'
+    - 'message;&8[&bWipeout&8] &fTebrikler, wipeoutu &a%rank%. &folarak bitirdiniz.'
+    - 'command;eco give %player% 50000'
+
+animation:
+  #How many ticks should it wait before going down?
+  #Example: If you type 6, it will be 6 * down_time. So it waits 30 ticks before going down. - 30 tick = 1.5 second.
+  wait_down_time: 6
+
+  #How many ticks should it wait before going up?
+  #Example: If you type 1, it will be 1 * up_time. So it waits 5 ticks before going up. - 5 tick = 0.25 second.
+  wait_up_time: 1
+
+  down_speed: 5 #tick - 20 tick = 1 second
+  up_speed: 5 #tick - 20 tick = 1 second
+
+  #How many ticks later the player stands on the block, does the block fall?
+  #2 tick = 0.10 second
+  fall_block_speed: 2
+
+  #How many ticks later does the block come back?
+  #20 tick = 1 second
+  fall_block_replace: 20
+
+  #How many percent chance the pistons to extansion?
+  piston_extension_chance: 30
+
+  #How many ticks later will it retract the piston block?
+  #10 tick = 0.5 second
+  piston_retract_time: 10
+
+  #How many ticks after the wipeout starts the pistons work
+  #0 tick = 0 second. That is, the pistons will work directly.
+  pistons_start_time: 0
+
+  #How many ticks later will the pistons be extension?
+  #40 tick = 2 second.
+  piston_extension_time: 40
+
+  #How many ticks after the wipeout starts the flow work
+  #0 tick = 0 second. That is, the flow will work directly.
+  water_flow_start_time: 0
+
+  #How many ticks wait it wait before pull the water?
+  #60 tick = 3 second.
+  water_pull_time: 60
+
+  #How many ticks later does the water flow start again?
+  #300 tick = 15 second.
+  water_reflow_time: 300
+
+  #How many ticks later does the block come back?
+  #20 tick = 1 second
+  onetap_block_replace: 40
+
+  #How many ticks later does the block remove?
+  #20 tick = 1 second
+  onetap_block_remove: 60
+
+  #How many tick seconds do blocks move?
+  #4 tick = 0.2 second
+  ramp_move_speed: 4
+
+  #How many ticks after do the blocks start to move?
+  #10 tick = 0.5 second
+  ramp_wait_time: 10
+
+  rotrod_rotate_speed: 1
+
+debug: false

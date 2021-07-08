@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>apiawipeout</artifactId>
+        <groupId>com.irfandumanx</groupId>
+        <version>1.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <packaging>jar</packaging>
+    <artifactId>v1_16_R3</artifactId>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api-1.16.5</artifactId>
+            <version>1.16.5-R0.1-SNAPSHOT</version>
+            <scope>system</scope>
+            <systemPath>${intellij.libraries}/patched_1.16.5.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.irfandumanx</groupId>
+            <artifactId>apiawipeoutcore</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${intellij.libraries}/original-ApiaWipeout.jar</systemPath>
+        </dependency>
+    </dependencies>
+</project>

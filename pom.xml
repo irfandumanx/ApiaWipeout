@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.irfandumanx</groupId>
+  <artifactId>apiawipeout</artifactId>
+  <packaging>pom</packaging>
+  <version>2.0</version>
+  <modules>
+    <module>v1_12_R1</module>
+    <module>v1_16_R3</module>
+    <module>Core</module>
+  </modules>
+  <name>ApiaWipeout</name>
+  <properties>
+    <downloadJavadocs>true</downloadJavadocs>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.release>8</maven.compiler.release>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <intellij.workspace>C:\JavaDemos</intellij.workspace>
+    <intellij.libraries>C:\McLibraries</intellij.libraries>
+    <intellij.output>C:\Users\İrfan DUMAN\Desktop\Masaüstü Programları\DEVELOPMENT PROCESS OF APIAWIPEOUT\Sunucum 1.16.5\plugins</intellij.output>
+  </properties>
+  <build>
+    <defaultGoal>clean install</defaultGoal>
+    <finalName>${project.name}-${project.version}</finalName>
+    <sourceDirectory>src</sourceDirectory>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+    </resources>
+  </build>
+  <repositories>
+    <repository>
+      <id>papermc</id>
+      <url>https://papermc.io/repo/repository/maven-public/</url>
+    </repository>
+    <repository>
+      <name>jcenter</name>
+      <id>bintray-jcenter</id>
+      <url>https://jcenter.bintray.com</url>
+    </repository>
+    <repository>
+      <id>spigot-repo</id>
+      <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+    </repository>
+    <repository>
+      <id>jitpack.io</id>
+      <url>https://jitpack.io</url>
+    </repository>
+    <repository>
+      <id>codemc-repo</id>
+      <url>https://repo.codemc.io/repository/maven-public/</url>
+    </repository>
+    <repository>
+      <id>apache.snapshots</id>
+      <name>Apache Snapshot Repository</name>
+      <url>https://repository.apache.org/snapshots</url>
+    </repository>
+  </repositories>
+  <dependencies>
+    <dependency>
+      <groupId>com.gmail.filoghost.holographicdisplays</groupId>
+      <artifactId>holographicdisplays-api</artifactId>
+      <version>2.4.0</version>
+      <scope>system</scope>
+      <systemPath>${intellij.libraries}/HolographicDisplays.jar</systemPath>
+    </dependency>
+  </dependencies>
+</project>

@@ -1,0 +1,14 @@
+main\java\com\irfandumanx\apiawipeout\v1_12_R1\listeners\ItemClickListener.class
+main\java\com\irfandumanx\apiawipeout\v1_12_R1\wipeoutevents\EscalatorRamp$1.class
+main\java\com\irfandumanx\apiawipeout\v1_12_R1\wipeoutevents\EscalatorRamp.class
+main\java\com\irfandumanx\apiawipeout\v1_12_R1\wipeoutevents\Rotrod.class
+main\java\com\irfandumanx\apiawipeout\v1_12_R1\misc\AsyncBlocksSet.class
+main\java\com\irfandumanx\apiawipeout\v1_12_R1\wipeoutevents\StartBlock.class
+main\java\com\irfandumanx\apiawipeout\v1_12_R1\wipeoutevents\EscalatorRamp$2.class
+main\java\com\irfandumanx\apiawipeout\v1_12_R1\commands\ShowRegionCommand.class
+main\java\com\irfandumanx\apiawipeout\v1_12_R1\listeners\BlockFallListener.class
+main\java\com\irfandumanx\apiawipeout\v1_12_R1\wipeoutevents\BlocksDownUp.class
+main\java\com\irfandumanx\apiawipeout\v1_12_R1\wipeoutevents\WaterFlow.class
+main\java\com\irfandumanx\apiawipeout\v1_12_R1\misc\Item.class
+main\java\com\irfandumanx\apiawipeout\v1_12_R1\wipeoutevents\OneTapBlock.class
+main\java\com\irfandumanx\apiawipeout\v1_12_R1\wipeoutevents\PistonsMove.class
